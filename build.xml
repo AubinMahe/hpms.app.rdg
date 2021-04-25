@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="hpms.app.rdg" default="update-libs">
+    <target name="update-libs">
+       <exec executable="make" dir="${user.home}/Dev/C/utils" />
+       <exec executable="make" dir="${user.home}/Dev/C/rkv" />
+       <exec executable="make" dir="${user.home}/Dev/C/rdg" />
+    </target>
+</project>

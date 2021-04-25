@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+
+<?import javafx.collections.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.web.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="hpms.app.rdg.ReplicatedDrawingCtrl">
+   <top>
+      <HBox alignment="CENTER_LEFT">
+         <Label text="Forme : " />
+         <ComboBox fx:id="_shapeSelector">
+            <items>
+               <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="Point" />
+                  <String fx:value="Cercle" />
+                  <String fx:value="Polygone" />
+               </FXCollections>
+            </items>
+         </ComboBox>
+         <Label text="Couleur" />
+         <ColorPicker fx:id="_colorPicker" />
+      </HBox>
+   </top>
+   <center>
+      <Canvas fx:id="_canvas" width="1200" height="800" />
+   </center>
+</BorderPane>
